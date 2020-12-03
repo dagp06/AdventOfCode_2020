@@ -3,7 +3,7 @@
 
 #include <algorithm>
 
-
+#define DEBUG_LOGS false
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 std::string const CChallenge_01::sm_inputFilePath = "Inputs/Input_Challenge_01.txt";
@@ -11,13 +11,13 @@ std::string const CChallenge_01::sm_inputFilePath = "Inputs/Input_Challenge_01.t
 /*
 <==> Execution times <==>
 PART 1 :
-  Set Up    :  0.000182 s
-  Execution :  0.013659 s
-  Clean Up  :  1e-05 s
+  Set Up    :  0.000203 s
+  Execution :  0.002677 s
+  Clean Up  :  1.9e-05 s
 ---------------------------
 PART 2 :
-  Set Up    :  0.00019 s
-  Execution :  0.492299 s
+  Set Up    :  0.000197 s
+  Execution :  0.003717 s
   Clean Up  :  1.1e-05 s
 <=========================>
 */
@@ -52,7 +52,9 @@ EErrorCode CChallenge_01::Run_FirstPart()
         int currentValue = *it;
         int targetValue = sum - currentValue;
 
-        std::cout << "Entry[" << i << "] = " << currentValue << " - Target Value = " << targetValue << std::endl;
+        if (DEBUG_LOGS)
+            std::cout << "Entry[" << i << "] = " << currentValue << " - Target Value = " << targetValue << std::endl;
+
         if (m_entries.find(targetValue) != m_entries.end())
         {
             result = currentValue * targetValue;
@@ -114,7 +116,9 @@ EErrorCode CChallenge_01::Run_SecondPart()
 
             targetValue = sum - currentValue;
 
-            std::cout  << i << " - " << *it_1 << " + " << *it_2 << " = " << currentValue << " - Target Value = " << targetValue << std::endl;
+            if (DEBUG_LOGS)
+                std::cout  << i << " - " << *it_1 << " + " << *it_2 << " = " << currentValue << " - Target Value = " << targetValue << std::endl;
+
             if (m_entries.find(targetValue) != m_entries.end())
             {
                 result = *it_1 * *it_2 * targetValue;
