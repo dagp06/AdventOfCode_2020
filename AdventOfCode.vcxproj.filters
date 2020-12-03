@@ -11,6 +11,9 @@
     <ClInclude Include="Source\Challenges\Challenge_01.h">
       <Filter>Source\Challenges</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Challenges\Challenge_02.h">
+      <Filter>Source\Challenges</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Challenges\Challenge_N.h">
       <Filter>Source\Challenges</Filter>
     </ClInclude>
