@@ -15,7 +15,7 @@ private:
     private:
         int m_MinOccurenceCount = 0;
         int m_MaxOccurenceCount = 0;
-        char m_Character;
+        char m_Character = '\0';
         std::string m_Password;
     };
 
