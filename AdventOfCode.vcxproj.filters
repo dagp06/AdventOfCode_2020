@@ -32,6 +32,9 @@
     <ClInclude Include="Source\Challenges\Challenge_08.h">
       <Filter>Source\Challenges</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Challenges\Challenge_09.h">
+      <Filter>Source\Challenges</Filter>
+    </ClInclude>
     <ClInclude Include="Source\Challenges\Challenge_N.h">
       <Filter>Source\Challenges</Filter>
     </ClInclude>
