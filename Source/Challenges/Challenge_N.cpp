@@ -1,12 +1,20 @@
 #include "Challenge_N.h"
 #include "../Helpers/FileHelpers.h"
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 std::string const CChallenge_N::sm_inputFilePath = "Inputs/Input_Challenge_N.txt";
 
+#define DEBUG_LOGS false
 
+/*
+<==> Execution times <==>
+PART 1 :
+
+---------------------------
+PART 2 :
+
+<=========================>
+*/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 EErrorCode CChallenge_N::SetUp_FirstPart()
